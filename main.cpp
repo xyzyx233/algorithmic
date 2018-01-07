@@ -1,11 +1,14 @@
-#include <iostream>
+//#include <iostream>
 #include "queen.h"
-//#include <fstream>
+#include <fstream>
 
 using namespace std;
 
 
 int main(){
-    queen q=queen();
-    q.start();
+    ofstream SaveFile("cpp-home.txt");
+    SaveFile << "Hello World, from www.cpp-home.com and Loobian!";
+    SaveFile.close();
+//    queen q=queen();
+//    q.start();
 }

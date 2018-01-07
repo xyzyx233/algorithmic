@@ -47,6 +47,7 @@ void queen::showresult(){
         }
         std::cout << std::endl;
     }
+    std::cout << std::endl;
 }
 void queen::start(){
     point p(0,0);
@@ -58,7 +59,6 @@ void queen::start(){
             {
                 chess[p.getx()*N+p.gety()]=1;
                 showresult();
-                std::cout << std::endl;
             }
             else if(check(p))
             {
