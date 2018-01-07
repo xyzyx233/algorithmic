@@ -2,6 +2,7 @@
 #include "queen.h"
 #include "queen_1.h"
 #include <fstream>
+#include "greedisgood.h"
 
 using namespace std;
 
@@ -19,12 +20,19 @@ using namespace std;
 int main(){
 //    f ff;
 //    ff.show();
-    queen q=queen();
-    point p(0,0);
-    q.r_start(p);
+    //递归N后
+//    queen q=queen();
+//    point p(0,0);
+//    q.r_start(p);
+    //迭代n后
 //    q.start();
+    //另一种方法
 //    queen_1 q=queen_1();
 //    q.init();
 //    q.eightQueen_1();
+    //贪心算法
+    greedisgood g=greedisgood();
+    g.getinfo();
+    g.greedy();
     return 0;
 }
