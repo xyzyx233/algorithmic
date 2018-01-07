@@ -4,7 +4,7 @@
 
 #include "queen.h"
 
-queen::queen(int N=8){
+queen::queen(int N){
     this->N=N;
     chess=new int[N*N];
     for(int i=0;i<N;i++)
