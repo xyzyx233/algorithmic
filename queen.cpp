@@ -80,3 +80,23 @@ void queen::start(){
         }
     }
 }
+void queen::r_start(point p) {
+    for(int i=0; i<N; i++)
+    {
+        p.setY(i);
+        if(p.getx() == N-1 && check(p))
+        {
+            chess[p.getx()*N+p.gety()]=1;
+            showresult();
+            return;
+        }
+        else if(check(p))
+        {
+            chess[p.getx()*N+p.gety()]=1;
+            p.setX(p.getx()+1);
+            r_start(p);
+            p.setX(p.getx()-1);
+            chess[p.getx()*N+p.gety()]=0;
+        }
+    }
+}

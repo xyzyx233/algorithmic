@@ -17,6 +17,7 @@ public:
     bool check(point p);
     void showresult();
     void start();
+    void r_start(point p);
 };
 
 
