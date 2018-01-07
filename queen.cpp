@@ -3,6 +3,7 @@
 //
 
 #include "queen.h"
+#include <fstream>
 
 queen::queen(int N){
     this->N=N;
